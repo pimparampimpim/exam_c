@@ -12,10 +12,12 @@ int * changeDigits(char *lines) {
         lines += offset;
         int_arr[index++] = i+1;
     }
-    return int_arr;
+    for(int i = 0; i < 5; i++){
+        printf("%d ", *(int_arr + i));
+    }
 }
 
 int main(){
-  char *temp = "12345";
+  char *temp = "1 2 3 4 5";
   changeDigits(temp);
 }
